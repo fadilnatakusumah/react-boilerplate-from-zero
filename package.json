@@ -1,0 +1,19 @@
+{
+  "name": "react-from-zero-webpack",
+  "version": "1.0.0",
+  "description": "Build react app from zero with webpack configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadilnatakusumah/react-boilerplate-from-zero.git"
+  },
+  "author": "Fadil Natakusumah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fadilnatakusumah/react-boilerplate-from-zero/issues"
+  },
+  "homepage": "https://github.com/fadilnatakusumah/react-boilerplate-from-zero#readme"
+}
