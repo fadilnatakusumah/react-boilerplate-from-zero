@@ -1,9 +1,10 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require("uglifyjs-3-webpack-plugin");
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'cheap-module-source-map',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -19,11 +20,6 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        // use: {
-        //   options: {
-        //     presets: ['@babel/preset-env']
-        //   }
-        // },
         exclude: /node_modules/,
       },
       {
@@ -66,7 +62,7 @@ module.exports = {
       template: __dirname + '/src/index.html',
       filename: 'index.html',
       inject: 'body',
-
     }),
+    new UglifyJsPlugin()
   ]
 }
